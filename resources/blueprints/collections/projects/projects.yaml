@@ -1,0 +1,112 @@
+title: Project
+sections:
+  overview:
+    display: Overview
+    fields:
+      -
+        handle: assets
+        field:
+          mode: grid
+          restrict: false
+          allow_uploads: true
+          max_files: 1
+          display: Image
+          type: assets
+          icon: assets
+          listable: hidden
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          input_type: text
+          antlers: false
+          display: Title
+          icon: text
+          listable: hidden
+          validate:
+            - required
+  main:
+    display: Main
+    fields:
+      -
+        handle: project
+        field:
+          input_type: text
+          antlers: false
+          display: Project
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: client
+        field:
+          input_type: text
+          antlers: false
+          display: Client
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: tools
+        field:
+          max_items: 3
+          mode: default
+          taxonomies:
+            - tags
+          display: Tools
+          type: terms
+          icon: taxonomy
+          listable: hidden
+          validate:
+            - required
+      -
+        handle: what_i_did_here
+        field:
+          always_show_set_button: false
+          buttons:
+            - h2
+            - h3
+            - bold
+            - italic
+            - unorderedlist
+            - orderedlist
+            - removeformat
+            - quote
+            - anchor
+            - image
+            - table
+          save_html: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: false
+          reading_time: false
+          fullscreen: true
+          allow_source: true
+          display: 'What I did here:'
+          type: bard
+          icon: bard
+          listable: hidden
+      -
+        handle: main_image
+        field:
+          mode: grid
+          restrict: false
+          allow_uploads: true
+          max_files: 1
+          display: 'Main image'
+          type: assets
+          icon: assets
+          listable: hidden
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+          validate:
+            - required

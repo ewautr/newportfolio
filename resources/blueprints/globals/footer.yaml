@@ -1,0 +1,47 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: name_and_lastname
+        field:
+          input_type: text
+          antlers: false
+          display: 'Name and lastname'
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: city_country
+        field:
+          input_type: text
+          antlers: false
+          display: 'City, country'
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: email
+        field:
+          input_type: text
+          antlers: false
+          display: Email
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: phone_number
+        field:
+          input_type: text
+          antlers: false
+          display: 'Phone number'
+          type: text
+          icon: text
+          listable: hidden
+      -
+        handle: link_to_github
+        field:
+          display: 'Link to github'
+          type: link
+          icon: link
+          listable: hidden
