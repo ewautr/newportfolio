@@ -23,6 +23,9 @@
                 h3 {
                     text-align: right;
                     grid-area: 1 / 1 / 1 / 1;
+                    @include respond(mobile) {
+                        grid-area: inherit;
+                    }
                 }
             }
             h3 {
