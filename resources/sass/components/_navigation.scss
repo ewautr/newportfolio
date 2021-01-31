@@ -12,7 +12,6 @@ nav {
         top: var(--padding);
 
         transition: all 0.2s $cubic-bezier;
-        transform-origin: top;
 
         &.hide {
             display: none;
@@ -75,7 +74,8 @@ nav {
                 }
             }
 
-            &:hover {
+            &:hover,
+            a:hover {
                 color: $purple;
             }
         }

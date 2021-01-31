@@ -47,7 +47,6 @@ li {
 p {
     font-size: 5rem;
     line-height: 140%;
-    font-weight: 400;
     @include respond(tablet) {
         font-size: 3rem;
         margin-top: 2rem;
