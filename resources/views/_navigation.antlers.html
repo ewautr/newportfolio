@@ -1,0 +1,12 @@
+<nav>
+    <svg class="{{ if current_uri == "/" }} hide {{ /if }}" fill="none" stroke="currentColor" viewbox="6 4 12 18" xmlns="http://www.w3.org/2000/svg">
+        <path d="M15 19l-7-7 7-7" stroke-width="2"></path>
+    </svg>
+    <ul>
+        {{ nav:navigation scope="nav"}}
+        <li>
+            <a href="{{ nav:url }}" class="{{ if is_current }} active {{ endif }} ">{{ nav:title }}</a>
+        </li>
+        {{ /nav:navigation }}
+    </ul>
+</nav>

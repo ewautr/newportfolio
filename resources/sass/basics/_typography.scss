@@ -1,0 +1,79 @@
+body {
+    font-family: $font;
+    color: $black;
+    text-transform: lowercase;
+    font-weight: 700;
+}
+
+a,
+a:visited,
+strong {
+    text-decoration: none;
+    color: $purple;
+    cursor: none;
+}
+
+h1,
+h2,
+h3 {
+    font-size: 14.6rem;
+    @include respond(small-desk) {
+        font-size: 12rem;
+    }
+    @include respond(tablet) {
+        font-size: 11rem;
+    }
+    @include respond(mobile) {
+        font-size: 5.5rem;
+    }
+}
+
+h4,
+li {
+    font-size: 9rem;
+    @include respond(small-desk) {
+        font-size: 7rem;
+    }
+    @include respond(mobile) {
+        font-size: 3rem;
+    }
+}
+
+li {
+    list-style: none;
+    line-height: 140%;
+}
+
+p {
+    font-size: 5rem;
+    line-height: 140%;
+    font-weight: 400;
+    @include respond(tablet) {
+        font-size: 3rem;
+        margin-top: 2rem;
+    }
+    @include respond(mobile) {
+        font-size: 2rem;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+    text-transform: lowercase;
+}
+
+a,
+a > strong {
+    &:hover {
+        color: $yellow;
+    }
+}
+
+.project:hover > h3,
+.project:hover > h3 a {
+    color: $yellow !important;
+}

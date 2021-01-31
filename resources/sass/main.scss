@@ -1,3 +1,12 @@
-body {
-    background: black;
-}
+@import "basics/base";
+@import "basics/variables";
+@import "basics/typography";
+
+@import "pages/frontpage";
+@import "pages/projectpage";
+@import "pages/about-me";
+
+@import "components/paragraph";
+@import "components/footer";
+@import "components/cursor";
+@import "components/navigation";

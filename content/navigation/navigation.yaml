@@ -1,0 +1,13 @@
+title: Navigation
+collections:
+  - pages
+tree:
+  -
+    title: 'About Me'
+    url: /about-me
+  -
+    title: Projects
+    url: '/#projects-index'
+  -
+    title: 'Contact Info'
+    url: '#contact'

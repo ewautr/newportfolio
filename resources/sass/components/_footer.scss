@@ -1,0 +1,13 @@
+#contact {
+    padding: var(--padding);
+    width: 100vw;
+    height: 60vh;
+    background: $black;
+    color: $white;
+    display: grid;
+    place-items: center;
+    @include respond(mobile) {
+        height: auto;
+        padding: 7rem var(--padding);
+    }
+}

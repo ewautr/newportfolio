@@ -1,0 +1,42 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+    //cursor: url(/assets/cursor.png), auto;
+    cursor: none;
+}
+
+// mixin for media queries
+@mixin respond($breakpoint) {
+    @if $breakpoint == mobile {
+        @media only screen and (max-width: 425px) {
+            @content;
+        } //600px
+    }
+    @if $breakpoint == tablet {
+        @media only screen and (max-width: 768px) {
+            @content;
+        } //1200px
+    }
+    @if $breakpoint == small-desk {
+        @media only screen and (max-width: 1220px) {
+            @content;
+        } //1800
+    }
+    @if $breakpoint == desktop {
+        @media only screen and (min-width: 1530px) {
+            @content;
+        } //1800
+    }
+}

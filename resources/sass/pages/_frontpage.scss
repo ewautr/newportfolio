@@ -1,0 +1,45 @@
+#frontpage {
+    #projects-index {
+        padding: var(--padding);
+        margin: auto;
+        .project {
+            width: 80%;
+            margin: 15% 0;
+            display: grid;
+            grid-template-columns: 5fr 5fr;
+            grid-gap: 10%;
+            align-items: center;
+
+            @include respond(tablet) {
+                width: 60%;
+                grid-template-columns: 1fr;
+                grid-template-rows: 5fr 5fr;
+                grid-gap: 0;
+                align-items: center;
+            }
+            &:nth-child(2n) {
+                margin-right: 0;
+                margin-left: auto;
+                h3 {
+                    text-align: right;
+                    grid-area: 1 / 1 / 1 / 1;
+                }
+            }
+            h3 {
+                @include respond(tablet) {
+                    align-self: baseline;
+                }
+                a {
+                    color: $black;
+                }
+            }
+            img {
+                width: 100%;
+                height: auto;
+                @include respond(tablet) {
+                    grid-area: 1 / 1 / 1 / 1;
+                }
+            }
+        }
+    }
+}

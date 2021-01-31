@@ -1,0 +1,43 @@
+#projectpage {
+    padding: var(--padding);
+    margin: auto;
+
+    .projectpage_info {
+        margin: 7rem 0;
+        align-items: center;
+        @include respond(tablet) {
+            margin: 8rem 0;
+        }
+        ul {
+            display: grid;
+            grid-template-columns: max-content 1fr;
+            li {
+                &:nth-child(2n + 1) {
+                    justify-self: left;
+                }
+                &:nth-child(2n) {
+                    justify-self: right;
+                    text-align: right;
+                }
+            }
+        }
+    }
+    .projectpage_image {
+        display: block;
+        margin: auto;
+        width: 70%;
+        max-width: 80rem;
+        border: 1rem solid $black;
+        @include respond(tablet) {
+            width: 100%;
+        }
+    }
+    .projectpage_description {
+        margin: 7rem auto;
+        width: 80%;
+        max-width: 100rem;
+        @include respond(tablet) {
+            margin: 9rem auto;
+        }
+    }
+}

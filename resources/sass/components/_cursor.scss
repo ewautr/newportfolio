@@ -1,0 +1,23 @@
+.cursor {
+    position: fixed;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+}
+.cursor--small {
+    width: 27px;
+    height: 27px;
+    left: -13.5px;
+    top: -13.5px;
+    border-radius: 50%;
+    z-index: 11001;
+    background: $black;
+    opacity: 0;
+}
+.cursor--canvas {
+    width: 100vw;
+    height: 100vh;
+    z-index: 11000;
+    transition: 0.3s all $cubic-bezier;
+    mix-blend-mode: screen;
+}

@@ -1,0 +1,67 @@
+#about-me {
+    .paragraph {
+        h2,
+        h3 {
+            font-size: 12rem;
+            @include respond(small-desk) {
+                font-size: 9rem;
+            }
+            @include respond(small-desk) {
+                font-size: 4rem;
+            }
+        }
+        &_with_image {
+            width: 90%;
+            height: 87vh;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-gap: 5rem;
+            @include respond(small-desk) {
+                font-size: 9rem;
+                height: 94vh;
+            }
+            @include respond(tablet) {
+                grid-template-columns: 1fr;
+                grid-template-rows: 5fr 5fr;
+                grid-gap: 0;
+                align-items: center;
+            }
+            @include respond(mobile) {
+                height: auto;
+                padding: 8rem 0;
+                align-items: baseline;
+                grid-template-rows: max-content 1fr;
+                grid-gap: 2rem;
+            }
+            h1 {
+                font-size: 6rem;
+                line-height: 144%;
+                @include respond(small-desk) {
+                    font-size: 5rem;
+                }
+                @include respond(tablet) {
+                    font-size: 4rem;
+                    align-self: baseline;
+                }
+                @include respond(mobile) {
+                    font-size: 3rem;
+                    align-self: baseline;
+                }
+            }
+            img {
+                display: block;
+                width: 100%;
+                height: auto;
+                max-width: 44rem;
+                border: 1rem solid $black;
+                @include respond(tablet) {
+                    max-width: 35rem;
+                }
+                @include respond(tablet) {
+                    width: 21rem;
+                }
+            }
+        }
+    }
+}

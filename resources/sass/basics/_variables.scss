@@ -1,0 +1,19 @@
+//COLORS
+$purple: #cec1e7;
+$yellow: #fef151;
+$black: #222222;
+$white: #fff;
+
+:root {
+    --padding: 2rem;
+    @include respond(mobile) {
+        --padding: 1rem;
+    }
+}
+//FONT
+$font: "Helvetica";
+
+//BOX SHADOW
+$box-shadow: 0 2.5rem 4rem rgba($black, 0.2);
+
+$cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);

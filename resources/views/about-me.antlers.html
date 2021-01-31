@@ -1,0 +1,16 @@
+{{ partial:navigation }}
+<div class="wrapper" id="about-me">
+    <section class="paragraph paragraph_with_image">
+        <img src="{{ assets }}" alt="my photo">
+        <h1>{{ paragraph_1 | strip_tags:p}}</h1>
+
+    </section>
+    <section class="paragraph">
+        <h2>{{ paragraph_2 | strip_tags:p}}</h2>
+    </section>
+    <section class="paragraph">
+        <h2>{{ paragraph_3 | strip_tags:p}}</h2>
+    </section>
+</div>
+
+{{ partial:footer }}

@@ -1,0 +1,27 @@
+{{ partial:navigation }}
+<div class="wrapper" id="projectpage">
+    <main class="projectpage_info">
+        <ul>
+            <li>client:</li>
+            <li>{{ client }}</li>
+            <li>project:</li>
+            <li>{{ project_name  | strip_tags:p}}</li>
+            <li>tools:</li>
+            <li>{{ tools }}
+                {{ title }}
+                {{ if index | add:1 !== tools | count }}
+                    /
+                    {{ /if }}
+                    {{ /tools }}</li>
+            </li>
+        </ul>
+    </main>
+    <img src="{{ main_image }}" alt="project gif" class="projectpage_image">
+    <section class="projectpage_description">
+        <h4>What I did here:</h4>
+        <p>{{ what_i_did_here  | strip_tags:p}}</p>
+    </section>
+
+
+</div>
+{{ partial:footer }}

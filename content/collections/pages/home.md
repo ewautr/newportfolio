@@ -3,7 +3,7 @@ title: Home
 template: home
 author: c76c9ff3-cac4-4861-b791-9adcf43131b1
 updated_by: c76c9ff3-cac4-4861-b791-9adcf43131b1
-updated_at: 1611668059
+updated_at: 1611671069
 paragraph_1:
   -
     type: paragraph
@@ -55,7 +55,16 @@ paragraph_2:
         text: LinkedIn
       -
         type: text
-        text: ' or email or '
+        text: ' or '
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: email
+      -
+        type: text
+        text: ' or '
       -
         type: text
         marks:

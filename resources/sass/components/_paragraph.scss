@@ -1,0 +1,17 @@
+.paragraph {
+    width: 100vw;
+    height: 100vh;
+    padding: var(--padding);
+    display: grid;
+    place-items: center;
+
+    @include respond(mobile) {
+        height: auto;
+        padding: 7rem var(--padding);
+    }
+
+    &:nth-child(2n) {
+        background: $black;
+        color: $white;
+    }
+}
