@@ -5,7 +5,7 @@
     <ul>
         {{ nav:navigation scope="nav"}}
         <li>
-            <a href="{{ nav:url }}" class="{{ if is_current }} active {{ endif }} ">{{ nav:title }}</a>
+            <a href="{{ nav:url }}" class="{{ if is_current }} active {{ elseif current_uri == "/" && nav:title == "Projects" }} active {{ endif }} ">{{ nav:title }}</a>
         </li>
         {{ /nav:navigation }}
     </ul>

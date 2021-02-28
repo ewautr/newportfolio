@@ -4,17 +4,23 @@ function goBack() {
     window.history.back();
 }
 
-//active links
-// const links = document.querySelectorAll("nav > ul > li");
-// links.forEach(link => {
-//     link.addEventListener("click", e => {
-//         links.forEach(l => {
-//             l.querySelector("a").classList = "";
-//             console.log(l);
-//         });
-//         e.target.classList.add("active");
-//     });
-// });
+window.addEventListener("hashchange", changeActiveLink);
+function changeActiveLink() {
+    const links = document.querySelectorAll("nav > ul > li > a");
+    links.forEach(link => {
+        link.classList.remove("active");
+        const address = window.location.href;
+        console.log(link.innerText);
+        if (address.includes(link.innerText)) {
+            link.classList.add("active");
+        } else if (
+            link.innerText == "contact info" &&
+            address.includes("contact")
+        ) {
+            link.classList.add("active");
+        }
+    });
+}
 
 // set the starting position of the cursor outside of the screen
 let clientX = -100;
